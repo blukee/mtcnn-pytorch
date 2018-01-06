@@ -2,7 +2,7 @@ from PIL import ImageDraw
 
 
 def show_bboxes(img, bounding_boxes, facial_landmarks=[]):
-    """Run P-Net, generate bounding boxes, and do NMS.
+    """Draw bounding boxes and facial landmarks.
 
     Arguments:
         img: an instance of PIL.Image.
@@ -10,7 +10,7 @@ def show_bboxes(img, bounding_boxes, facial_landmarks=[]):
         facial_landmarks: a float numpy array of shape [n, 10].
 
     Returns:
-        an instance of PIL.Image
+        an instance of PIL.Image.
     """
 
     img_copy = img.copy()
